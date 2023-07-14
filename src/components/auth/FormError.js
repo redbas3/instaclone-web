@@ -8,7 +8,7 @@ const SFormError = styled.span`
 `;
 
 function FormError({ message }) {
-  return message !== "" ? <SFormError>{message}</SFormError> : null;
+  return message ? <SFormError>{message}</SFormError> : null;
 }
 
 export default FormError;
