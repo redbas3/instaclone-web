@@ -4,7 +4,7 @@ const Input = styled.input`
   width: 100%;
   border-radius: 3px;
   padding: 7px;
-  background-color: #fafafa;
+  background-color: ${(props) => props.theme.bgColor};
   border: 0.5px solid
     ${(props) => (props.error === 0 ? props.theme.borderColor : "tomato")};
   margin-top: 5px;
@@ -13,7 +13,7 @@ const Input = styled.input`
     font-size: 12px;
   }
   &:focus {
-    border-color: rgb(38, 38, 38);
+    border-color: ${(props) => props.theme.fontColor};
   }
 `;
 
