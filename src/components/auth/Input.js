@@ -5,11 +5,15 @@ const Input = styled.input`
   border-radius: 3px;
   padding: 7px;
   background-color: #fafafa;
-  border: 0.5px solid ${(props) => props.theme.borderColor};
+  border: 0.5px solid
+    ${(props) => (props.error === 0 ? props.theme.borderColor : "tomato")};
   margin-top: 5px;
   box-sizing: border-box;
   &::placeholder {
     font-size: 12px;
+  }
+  &:focus {
+    border-color: rgb(38, 38, 38);
   }
 `;
 
