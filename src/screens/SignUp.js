@@ -4,11 +4,11 @@ import FormBox from "../components/auth/FormBox";
 import Input from "../components/auth/Input";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Button from "../components/auth/Button";
-import Separator from "../components/auth/Separator";
 import BottomBox from "../components/auth/BottomBox";
 import routes from "../routes";
 import { styled } from "styled-components";
 import { FatLink } from "../components/shared";
+import PageTitle from "../components/pageTitle";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -26,6 +26,7 @@ const Subtitle = styled(FatLink)`
 function SignUp() {
   return (
     <AuthLayout>
+      <PageTitle title="Sign up" />
       <FormBox>
         <HeaderContainer>
           <FontAwesomeIcon icon={faInstagram} size="3x" />
