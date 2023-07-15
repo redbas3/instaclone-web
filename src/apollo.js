@@ -29,8 +29,8 @@ export const disableDarkMode = () => {
 
 export const client = new ApolloClient({
   uri:
-    process.env.NODE_ENV === "production"
-      ? "https://instaclone-redbas3.koyeb.app/graphql"
+    process.env.NODE_ENV !== "production"
+      ? "https://redbas3-instaclone.fly.dev/graphql"
       : "http://localhost:4000/graphql",
   cache: new InMemoryCache(),
 });
